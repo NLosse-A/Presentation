@@ -5,7 +5,7 @@ Responsive personal portfolio showcasing UX/UI design exploration and frontend p
 ## Live Website
 
 You can view the portfolio here:
-
+![Portfolio Preview](images/preview.png)
 https://NLosse-A.github.io/portfolio
 
 ## Overview
