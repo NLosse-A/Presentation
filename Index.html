@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Who i am?</title>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <section id="home"></section>
+
+        <button
+            class="theme-toggle"
+            onclick="toggleTheme()"
+            aria-label="Toggle theme"
+        >
+            <span class="theme-icon">🌙</span>
+        </button>
+
+        <!-- NAVIGATION COMPONENT -->
+        <nav class="navbar">
+            <div class="container">
+                <button class="menu-toggle" id="menu-toggle">
+                    ☰
+                </button>
+
+                <div class="nav-grid" id="nav-menu">
+                    <a href="#home" class="nav-card">Home</a>
+                    <a href="#about" class="nav-card">About</a>
+                    <a href="#skills" class="nav-card">Skills</a>
+                    <a href="#projects" class="nav-card">Projects</a>
+                    <a href="#contact" class="nav-card">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO COMPONENT -->
+        <section class="hero container">
+            <div class="profile">
+                <img
+                    src="https://github.com/NLosse-A.png?size=150"
+                    alt="Profile picture"
+                    class="profile-image"
+                >
+            </div>
+            <h1 class="hero-title">Alice C. Neverlosse</h1>
+            <p class="hero-subtitle">
+                UX/UI Designer & Frontend Learner <br>
+                <p style:"color: var(--text-primary);">
+                    I design clean digital interfaces and build interactive
+                    experiences. <br>
+                    Focused on usability, structure and visual clarity.
+                </p>
+            </p>
+        </section>
+
+        <!-- ABOUT COMPONENT -->
+
+        <section class="section wave-section" id="about">
+            <svg
+                class="wave-bg"
+                viewBox="0 0 1200 600"
+                preserveAspectRatio="xMidYMid slice"
+            >
+                <path
+                    d="
+M0,0
+L0,600
+C160,560 320,420 620,350
+C860,300 980,260 1100,220
+C800,260 560,340 360,420
+C200,500 120,560 0,540
+Z
+"
+                    fill="url(#gradient)"
+                />
+
+                <defs>
+                    <linearGradient
+                        id="gradient"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%"
+                    >
+                        <stop offset="0%" stop-color="#ff2fb3" />
+                        <stop offset="100%" stop-color="#7a3cff" />
+                    </linearGradient>
+                </defs>
+            </svg>
+
+            <section class="section container">
+                <div class="card">
+                    <h2 class="card-title">About Me</h2>
+                    <p>
+                        I am a <strong>UX/UI design</strong> enthusiast
+                        interested in creating
+                        <strong>clear, functional and visually engaging</strong>
+                        interfaces. I enjoy exploring how <strong>design
+                            decisions</strong> influence the way people interact
+                        with <strong>digital products</strong>. Currently I am
+                        developing my skills in both <strong>interface
+                            design</strong> and
+                        <strong>frontend development</strong>, working with
+                        technologies such as
+                        <strong>HTML, CSS and JavaScript</strong>. I like
+                        experimenting with
+                        <strong>visual structures, component-based
+                            systems</strong> and new ways of presenting
+                        information in an <strong>intuitive</strong> way. My
+                        goal is to keep learning, build more complete projects
+                        and create <strong>digital experiences</strong> that are
+                        simple, accessible and enjoyable to use.
+                    </p>
+                    <hr>
+                    <p>
+                        Soy una entusiasta del <strong>diseño UX/UI</strong>
+                        interesada en crear interfaces <strong>claras,
+                            funcionales y visualmente atractivas</strong>. Me
+                        gusta explorar cómo las <strong>decisiones de
+                            diseño</strong> influyen en la experiencia de las
+                        personas al interactuar con
+                        <strong>productos digitales</strong>. Actualmente estoy
+                        desarrollando mis habilidades tanto en <strong>diseño de
+                            interfaces</strong> como en
+                        <strong>desarrollo frontend</strong>, trabajando con
+                        tecnologías como
+                        <strong>HTML, CSS y JavaScript</strong>. Disfruto
+                        experimentar con
+                        <strong>estructuras visuales, sistemas de
+                            componentes</strong> y nuevas formas de presentar la
+                        información de manera <strong>intuitiva</strong>. Mi
+                        objetivo es seguir aprendiendo, construir proyectos cada
+                        vez más completos y desarrollar <strong>experiencias
+                            digitales</strong> que sean simples, accesibles y
+                        agradables de usar.
+                    </p>
+                </div>
+            </section>
+        </section>
+
+        <!-- SKILLS COMPONENT -->
+        <section class="section container" id="skills">
+            <h2>Skills</h2>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>Design</h3>
+                    <span class="skill-tag">UX Thinking</span>
+                    <span class="skill-tag">UI Design</span>
+                    <span class="skill-tag">Wireframing</span>
+                    <span class="skill-tag">Visual Hierarchy</span>
+                    <span class="skill-tag">Layout Design</span>
+                    <span class="skill-tag">Component Design</span>
+                </div>
+
+                <div class="card">
+                    <h3>Frontend</h3>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">Responsive Design</span>
+                    <span class="skill-tag">Flexbox</span>
+                    <span class="skill-tag">CSS Grid</span>
+                    <span class="skill-tag">JavaScript (Basic)</span>
+                </div>
+
+                <div class="card">
+                    <h3>Tools</h3>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">Browser DevTools</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS COMPONENT -->
+        <section class="section wave-section-right" id="projects">
+            <svg
+                class="wave-bg-right"
+                viewBox="0 0 1200 600"
+                preserveAspectRatio="xMidYMid slice"
+            >
+                <path
+                    d="
+M1200,0
+L1200,600
+C1080,560 920,420 720,360
+C540,310 420,260 320,220
+C520,260 700,320 860,400
+C1000,480 1080,540 1200,520
+Z
+"
+                    fill="url(#gradient2)"
+                />
+
+                <defs>
+                    <linearGradient
+                        id="gradient2"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%"
+                    >
+                        <stop offset="0%" stop-color="#ff2fb3" />
+                        <stop offset="100%" stop-color="#7a3cff" />
+                    </linearGradient>
+                </defs>
+            </svg>
+
+            <div class="container">
+                <h2>Projects</h2>
+
+                <div class="grid" id="projects-grid">
+                    <!-- GitHub projects will appear here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT COMPONENT -->
+        <section class="section container" id="contact">
+            <h2>Contact</h2>
+            <p class="contact-text">
+                I'm always open to discussing new projects, creative ideas, or
+                opportunities to collaborate.
+            </p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Email</h3>
+                    <p>
+                        Feel free to reach out for collaboration or
+                        opportunities.
+                    </p>
+                    <a
+                        class="contact-link"
+                        href="mailto:Marieglez8272@gmail.com"
+                    >Mariaglez8272@gmail.com</a>
+                </div>
+
+                <div class="card">
+                    <h3>GitHub</h3>
+                    <p>Explore my projects and repositories.</p>
+                    <a
+                        class="contact-link"
+                        href="https://github.com/NLosse-A"
+                        target="_blank"
+                    >
+                        My Github Profile NLosse-A
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>LinkedIn</h3>
+                    <p>
+                        <font color="#ff7c08" size="3">
+                            Coming Soon In Progress.
+                        </font>
+                    </p>
+                    <a
+                        class="contact-link"
+                        href="https://linkedin.com/in/yourprofile"
+                        target="_blank"
+                    >
+                        My LinkeIn Profile (Coming Soon)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
