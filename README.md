@@ -33,11 +33,10 @@ The site focuses on clean layouts, component-based design, and responsive interf
 portfolio
 │
 ├── index.html
-├── css
-│   └── style.css
-├── js
-│   └── script.js
-└── images
+│
+├── style.css
+│
+└── script.js
 ```
 
 ## Sections
